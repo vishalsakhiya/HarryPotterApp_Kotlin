@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ImageView
+        android:id="@+id/imgProfile"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/user"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearMain"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imgProfile"
+
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        >
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+            >
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Species"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"/>
+                    <TextView
+                        android:id="@+id/txtSpecies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Species"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtHouse"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="House"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DateOfBirth"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtDateOfBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DateOfBirth"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wizard"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtWizard"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Wizard"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ancestry"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtAncestry"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Ancestry"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EyeColour"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtEyeColour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="EyeColour"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HairColour"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtHairColour"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HairColour"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Wand"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp"
+                        android:gravity="center_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txtWood"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wood"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp" />
+                        <TextView
+                            android:id="@+id/txtCore"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Core"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp" />
+                        <TextView
+                            android:id="@+id/txtLength"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Length"
+                            android:textColor="@color/black"
+                            android:layout_margin="10dp" />
+                    </LinearLayout>
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Patronus"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtPatronus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Patronus"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HogwartsStudent"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtHogwartsStudent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HogwartsStudent"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HogwartsStaff"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtHogwartsStaff"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="HogwartsStaff"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Actor"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtActor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Actor"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:layout_marginBottom="10dp">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alive"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                    <TextView
+                        android:id="@+id/txtAlive"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Alive"
+                        android:textColor="@color/black"
+                        android:layout_margin="10dp" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
